@@ -1,0 +1,96 @@
+body {
+  font-family: Oswald, sans-serif;
+  font-size: 18px;
+}
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 123.7%;
+  text-align: right;
+  letter-spacing: -0.025em;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 156.7%;
+  text-align: right;
+  text-shadow: 1px 1px 15px white;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+}
+a:hover {
+  animation: shake 1.5s;
+
+  animation-iteration-count: 1;
+  // animation-iteration-count: infinite;
+}
+
+.container {
+  max-width: 1120px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  z-index: 10;
+  align-items: center;
+  justify-content: space-between;
+}
+// .btn:hover {
+//   background-color: rgb(219, 196, 196);
+//   cursor: pointer;
+// }
+.btn-primary {
+  width: 225px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 156.7%;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: rgb(219, 196, 196);
+  cursor: pointer;
+}
+.btn-secondary {
+  width: 225px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 156.7%;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: rgb(219, 196, 196);
+  cursor: pointer;
+}
+.section {
+  font-size: 0;
+}

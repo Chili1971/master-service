@@ -1,0 +1,58 @@
+/* Header --------------------------------------*/
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-bottom: 3px solid #fff;
+  padding: 10px 0;
+}
+.header-logo {
+  img {
+    display: flex;
+    max-width: 300px;
+  }
+}
+.header-menu {
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin-right: 15px;
+    margin-left: 15px;
+    display: block;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    &:hover {
+      border-color: #fff;
+    }
+    &.isActive {
+      border-color: #fff;
+    }
+  }
+  // a:not(:last-child) {
+  //   margin-right: 15px;
+  // }
+}
+.header-contacts {
+  display: flex;
+  justify-content: end;
+  // width: 200px;
+}
+
+@media all and (max-width: 768px) {
+  .header-logo {
+    max-width: 150px;
+  }
+  .header-menu {
+    a {
+      font-size: 12px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+  .header-contacts {
+    font-size: 12px;
+  }
+}

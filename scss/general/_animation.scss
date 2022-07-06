@@ -1,0 +1,112 @@
+.bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, #30cfd0 0%, #330867 100%);
+  // background-image: linear-gradient(
+  //   -45deg,
+  //   rgba(59, 173, 227, 1) 0%,
+  //   rgba(87, 111, 230, 1) 25%,
+  //   rgba(152, 68, 183, 1) 51%,
+  //   rgba(255, 53, 127, 1) 100%
+  // );
+  // background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  animation: AnimateBG 20s ease infinite;
+}
+.bg-repair {
+  background: -webkit-linear-gradient(90deg, #c9b6bc, #e0e5eb);
+  background: linear-gradient(90deg, #c9b6bc, #e0e5eb);
+  // width: 100%;
+  // height: 100vh;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // background-size: 300% 300%;
+  // background-image: linear-gradient(
+  //   -45deg,
+  //   rgba(59, 173, 227, 1) 0%,
+  //   rgba(87, 111, 230, 1) 25%,
+  //   rgba(152, 68, 183, 1) 51%,
+  //   rgba(255, 53, 127, 1) 100%
+  // );
+  // animation: AnimateBG 20s ease infinite;
+}
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* дрожание изображения */
+a:hover {
+  animation: shake 1.5s;
+
+  animation-iteration-count: 1;
+  // animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+// .small-rotate {
+//   -webkit-transition: all 1s ease;
+//   transition: all 1s ease;
+// }
+// .small-rotate:hover {
+//   -webkit-transform: rotate(
+//     15deg
+//   ); /* Градусы поворота можно изменить по необходимости */
+//   transform: rotate(
+//     -15deg
+//   ); /* Градусы поворота можно изменить по необходимости */
+// }
+
+/*==================================*/

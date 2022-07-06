@@ -1,0 +1,122 @@
+.repair-menu {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-gap: 50px;
+
+  .menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      border: 10px solid #633fc8;
+      height: 100%;
+      // padding-top: 20px;
+      margin: 0;
+      // padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      a {
+        color: black !important;
+        font-size: 24px;
+        text-shadow: 1px 1px 2px rgb(101, 91, 91);
+      }
+      a {
+        &.isActive {
+          color: rgb(152, 4, 4) !important;
+          // text-transform: uppercase;
+          background-color: rgb(246, 233, 233);
+        }
+      }
+    }
+    align-self: stretch;
+    li {
+      &:not(:last-child) {
+        border-bottom: 1px solid white;
+      }
+
+      flex: 1 1 auto;
+      a {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-decoration: none;
+        height: 100%;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  align-content: flex-start;
+  align-items: flex-start;
+  li {
+    padding-bottom: 10px;
+  }
+  .title {
+    grid-column: 1 / 3;
+    h1 {
+      text-align: left;
+      color: rgb(163, 7, 7);
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 5px solid #633fc8;
+    }
+  }
+  .info {
+    // padding-left: 20px;
+    padding-right: 20px;
+    h2 {
+      padding-bottom: 20px;
+      font-size: 28px;
+    }
+  }
+
+  .main-img {
+    align-items: flex-start;
+    width: 100%;
+  }
+  .main-prices {
+    grid-column: 1 / 3;
+    border-top: 5px solid #633fc8;
+    border-bottom: 5px solid #633fc8;
+    // height: 100%;
+
+    .li-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-top: 10px;
+      // border-bottom: 1px solid black;
+      &:not(:last-child) {
+        border-bottom: 1px solid rgb(161, 161, 161);
+      }
+      .text {
+        max-width: 80%;
+      }
+    }
+  }
+  .main-prices-text {
+    span {
+      text-align: end;
+      // color: red;
+    }
+  }
+  .btn {
+    grid-column: 1 / 3;
+    margin-top: 20px;
+  }
+
+  // .main-prices-price {
+  //   text-align: right;
+  // }
+}

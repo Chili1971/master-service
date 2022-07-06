@@ -1,0 +1,18 @@
+.contacts-awards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+.contacts-awards-text {
+  grid-column: 1 / 4;
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.contacts-awards-img {
+  img {
+    max-width: 360px;
+  }
+}

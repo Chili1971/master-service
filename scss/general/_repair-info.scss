@@ -1,0 +1,136 @@
+.repair-info {
+  position: relative;
+  padding-top: 30px;
+  .repair-info-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    width: 100%;
+    counter-reset: card;
+    @media all and (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .repair-info-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 20px;
+      position: relative;
+      background-color: #fff;
+
+      &:first-child {
+        grid-column: 1 / 3;
+        // align-items: center;
+        // width: 600px;
+        border: 10px solid rgba(99, 63, 200, 1);
+        .price {
+          background: #633fc8;
+          color: #fff;
+        }
+      }
+      &:not(:first-child) {
+        .repair-info-card-img,
+        .price--old {
+          display: none;
+        }
+        .price {
+          color: #633fc8;
+        }
+      }
+      .repair-info-card-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 237px;
+        // transform: translateY(-50%);
+      }
+
+      counter-increment: card;
+      &:before {
+        content: "0" counter(card);
+        position: absolute;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 150px;
+        line-height: 100px;
+        color: rgba(170, 170, 170, 0.15);
+      }
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 44px;
+        margin-bottom: 24px;
+        color: #633fc8;
+      }
+      .list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 47px;
+        li {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 144.7%;
+          color: #000000;
+        }
+      }
+      .prices {
+        display: flex;
+        align-items: center;
+      }
+      .price {
+        padding: 14px 12px 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .price--old {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 156.7%;
+        text-decoration-line: line-through;
+        color: #633fc8;
+        margin-left: 25px;
+      }
+    }
+  }
+}
+.repair-info-form {
+  height: 100%;
+  padding: 10px;
+
+  background-color: #633fc8;
+  .repair-info-form-last {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    .title {
+      margin-top: 25px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+      margin-bottom: 24px;
+      color: white;
+    }
+    .text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 44px;
+      margin-bottom: 24px;
+      color: white;
+    }
+  }
+}
