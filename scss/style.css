@@ -757,14 +757,31 @@ a:hover {
 }
 
 .mobile-menu {
-  font-size: 12px;
-}
-.mobile-menu a {
-  font-size: 12px;
-  margin-right: 5px;
-  margin-left: 5px;
+  display: none;
 }
 
+@media all and (max-width: 320px) {
+  .mobile-menu {
+    position: absolute;
+    z-index: 10;
+    display: block;
+    font-size: 12px;
+    left: 0px;
+    top: 60px;
+  }
+  .mobile-menu a {
+    font-size: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: black;
+  }
+  .mobile-menu a:hover {
+    border-color: #fff;
+  }
+  .mobile-menu a.isActive {
+    border-color: #fff;
+  }
+}
 @media all and (max-width: 768px) {
   .header-logo {
     max-width: 150px;
