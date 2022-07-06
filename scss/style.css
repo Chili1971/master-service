@@ -583,6 +583,17 @@ a:hover {
 .section {
   font-size: 0;
 }
+@media all and (max-width: 1024px) {
+  .section {
+    height: auto !important;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .fp-overflow {
+    overflow: hidden !important;
+  }
+}
 
 .bg {
   width: 100%;
@@ -595,7 +606,7 @@ a:hover {
   -webkit-animation: AnimateBG 20s ease infinite;
           animation: AnimateBG 20s ease infinite;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .bg {
     height: auto;
   }
@@ -724,6 +735,16 @@ a:hover {
   border-bottom: 3px solid #fff;
   padding: 10px 0;
 }
+@media all and (max-width: 1024px) {
+  .header {
+    background: #326095;
+  }
+}
+@media all and (max-width: 1024px) {
+  .header__in {
+    flex-wrap: wrap;
+  }
+}
 .header .header-logo img {
   display: flex;
   max-width: 300px;
@@ -732,9 +753,13 @@ a:hover {
   display: flex;
   justify-content: center;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 768px) {
   .header .header-menu {
-    display: none;
+    order: 2;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 10px;
   }
 }
 .header .header-menu a {
@@ -760,29 +785,28 @@ a:hover {
   display: none;
 }
 
-@media all and (max-width: 320px) {
-  .mobile-menu {
-    position: absolute;
-    z-index: 10;
-    display: block;
-    font-size: 12px;
-    left: 0px;
-    top: 60px;
-  }
-  .mobile-menu a {
-    font-size: 12px;
-    margin-right: 5px;
-    margin-left: 5px;
-    color: black;
-  }
-  .mobile-menu a:hover {
-    border-color: #fff;
-  }
-  .mobile-menu a.isActive {
-    border-color: #fff;
-  }
+.mobile-menu {
+  position: absolute;
+  z-index: 10;
+  display: block;
+  font-size: 12px;
+  left: 0px;
+  top: 60px;
 }
-@media all and (max-width: 768px) {
+.mobile-menu a {
+  font-size: 12px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: black;
+}
+.mobile-menu a:hover {
+  border-color: #fff;
+}
+.mobile-menu a.isActive {
+  border-color: #fff;
+}
+
+@media all and (max-width: 1024px) {
   .header-logo {
     max-width: 150px;
   }
@@ -802,11 +826,33 @@ a:hover {
   flex: 1 0 50%;
   justify-content: space-between;
 }
+@media all and (max-width: 1024px) {
+  .repair.bg {
+    padding: 100px 0 50px;
+  }
+}
+@media all and (max-width: 768px) {
+  .repair.bg {
+    padding: 200px 0 100px;
+  }
+}
+@media all and (max-width: 768px) {
+  .repair:not(.bg) {
+    flex-wrap: wrap;
+  }
+}
 .repair .repair_img {
   position: relative;
   z-index: 9;
   margin-right: 10px;
   width: calc(55% - 10px);
+}
+@media all and (max-width: 768px) {
+  .repair .repair_img {
+    width: 100%;
+    margin-top: 40px;
+    order: 2;
+  }
 }
 .repair .repair_text {
   position: relative;
@@ -817,6 +863,20 @@ a:hover {
   align-items: flex-end;
   width: calc(45% - 10px);
   margin-left: 10px;
+}
+@media all and (max-width: 768px) {
+  .repair .repair_text {
+    display: block;
+    margin-left: 0;
+  }
+  .repair .repair_text *, .repair .repair_text {
+    text-align: center;
+  }
+}
+@media all and (max-width: 768px) {
+  .repair .repair_text {
+    width: 100%;
+  }
 }
 .repair .repair_text h1 {
   margin-bottom: 10px;
@@ -836,7 +896,7 @@ a:hover {
   width: 100%;
   counter-reset: card;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .repair-info .repair-info-cards {
     grid-template-columns: repeat(2, 1fr);
   }

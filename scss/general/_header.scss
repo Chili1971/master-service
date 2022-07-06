@@ -6,7 +6,14 @@
   z-index: 10;
   border-bottom: 3px solid #fff;
   padding: 10px 0;
-
+  @media all and (max-width: 1024px) {
+    background: #326095;
+  }
+  &__in {
+    @media all and (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+  }
   .header-logo {
     img {
       display: flex;
@@ -16,8 +23,13 @@
   .header-menu {
     display: flex;
     justify-content: center;
-    @media all and (max-width: 320px) {
-      display: none;
+    @media all and (max-width: 768px) {
+      // display: none;
+      order: 2;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding-bottom: 10px;
     }
 
     a {
@@ -46,34 +58,32 @@
   display: none;
 }
 
-@media all and (max-width: 320px) {
-  .mobile-menu {
-    position: absolute;
-    z-index: 10;
-    display: block;
+.mobile-menu {
+  position: absolute;
+  z-index: 10;
+  display: block;
+  font-size: 12px;
+  left: 0px;
+  top: 60px;
+  a {
     font-size: 12px;
-    left: 0px;
-    top: 60px;
-    a {
-      font-size: 12px;
-      margin-right: 5px;
-      margin-left: 5px;
-      color: black;
-      // display: block;
-      // padding: 2px 5px;
-      // border-radius: 1px;
-      // border: 1px solid transparent;
-      &:hover {
-        border-color: #fff;
-      }
-      &.isActive {
-        border-color: #fff;
-      }
+    margin-right: 5px;
+    margin-left: 5px;
+    color: black;
+    // display: block;
+    // padding: 2px 5px;
+    // border-radius: 1px;
+    // border: 1px solid transparent;
+    &:hover {
+      border-color: #fff;
+    }
+    &.isActive {
+      border-color: #fff;
     }
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
   .header-logo {
     max-width: 150px;
   }

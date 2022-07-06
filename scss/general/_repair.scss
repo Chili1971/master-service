@@ -2,12 +2,31 @@
   display: flex;
   flex: 1 0 50%;
   justify-content: space-between;
-
+  @media all and (max-width: 1024px) {
+    &.bg {
+      padding: 100px 0 50px;
+    }
+  }
+  @media all and (max-width: 768px) {
+    &.bg {
+      padding: 200px 0 100px;
+    }
+  }
+  &:not(.bg) {
+    @media all and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
   .repair_img {
     position: relative;
     z-index: 9;
     margin-right: 10px;
     width: calc(100% - 45% - 10px);
+    @media all and (max-width: 768px) {
+      width: 100%;
+      margin-top: 40px;
+      order: 2;
+    }
   }
   .repair_text {
     position: relative;
@@ -19,6 +38,17 @@
 
     width: calc(100% - 55% - 10px);
     margin-left: 10px;
+    @media all and (max-width: 768px) {
+      display: block;
+      margin-left: 0;
+      *,
+      & {
+        text-align: center;
+      }
+    }
+    @media all and (max-width: 768px) {
+      width: 100%;
+    }
     h1 {
       margin-bottom: 10px;
     }

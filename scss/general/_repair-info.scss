@@ -8,7 +8,7 @@
     grid-gap: 1px;
     width: 100%;
     counter-reset: card;
-    @media all and (max-width: 768px) {
+    @media all and (max-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
     }
 

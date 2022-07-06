@@ -7,9 +7,9 @@ $(function () {
     navigationTooltips: ["firstSlide", "secondSlide"],
     navigation: true,
     // showActiveTooltip: false,
-    responsiveWidth: 1200,
+    responsiveWidth: 1024,
     // scrollBar: false,
   });
 });
 
-alert($(window).innerWidth());
+// alert($(window).innerWidth());
