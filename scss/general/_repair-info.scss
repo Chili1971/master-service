@@ -10,6 +10,7 @@
     @media all and (max-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
     }
+
     .repair-info-card {
       display: flex;
       flex-direction: column;
