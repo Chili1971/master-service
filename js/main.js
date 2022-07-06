@@ -11,3 +11,5 @@ $(function () {
     // scrollBar: false,
   });
 });
+
+alert($(window).innerWidth());
