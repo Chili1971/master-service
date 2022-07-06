@@ -595,6 +595,11 @@ a:hover {
   -webkit-animation: AnimateBG 20s ease infinite;
           animation: AnimateBG 20s ease infinite;
 }
+@media all and (max-width: 768px) {
+  .bg {
+    height: auto;
+  }
+}
 
 .bg-repair {
   background: linear-gradient(90deg, #c9b6bc, #e0e5eb);
@@ -710,7 +715,6 @@ a:hover {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-/*==================================*/
 /* Header --------------------------------------*/
 .header {
   position: fixed;
@@ -719,6 +723,31 @@ a:hover {
   z-index: 10;
   border-bottom: 3px solid #fff;
   padding: 10px 0;
+}
+@media all and (max-width: 320px) {
+  .header {
+    display: none;
+  }
+}
+
+.header-mobile {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-bottom: 3px solid #fff;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: flex-end;
+}
+.header-mobile .header-mobile-logo {
+  padding-left: 5px;
+}
+.header-mobile .header-mobile-contacts {
+  padding-right: 5px;
 }
 
 .header-logo img {
@@ -806,7 +835,7 @@ a:hover {
 }
 @media all and (max-width: 768px) {
   .repair-info .repair-info-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .repair-info .repair-info-cards .repair-info-card {

@@ -1,6 +1,7 @@
 .repair-info {
   position: relative;
   padding-top: 30px;
+
   .repair-info-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -8,7 +9,7 @@
     width: 100%;
     counter-reset: card;
     @media all and (max-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .repair-info-card {

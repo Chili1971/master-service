@@ -6,7 +6,31 @@
   z-index: 10;
   border-bottom: 3px solid #fff;
   padding: 10px 0;
+  @media all and (max-width: 320px) {
+    display: none;
+  }
 }
+.header-mobile {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-bottom: 3px solid #fff;
+  padding: 10px 0;
+  // display: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: flex-end;
+  .header-mobile-logo {
+    padding-left: 5px;
+  }
+  .header-mobile-contacts {
+    padding-right: 5px;
+  }
+}
+
 .header-logo {
   img {
     display: flex;
@@ -31,10 +55,8 @@
       border-color: #fff;
     }
   }
-  // a:not(:last-child) {
-  //   margin-right: 15px;
-  // }
 }
+
 .header-contacts {
   display: flex;
   justify-content: end;

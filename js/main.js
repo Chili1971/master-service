@@ -8,6 +8,6 @@ $(function () {
     navigation: true,
     // showActiveTooltip: false,
     responsiveWidth: 1200,
-    // scrollBar: true,
+    // scrollBar: false,
   });
 });
