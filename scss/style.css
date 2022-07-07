@@ -770,6 +770,12 @@ a:hover {
   border-radius: 5px;
   border: 1px solid transparent;
 }
+@media all and (max-width: 768px) {
+  .header .header-menu a {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+}
 .header .header-menu a:hover {
   border-color: #fff;
 }
@@ -901,6 +907,11 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media all and (max-width: 768px) {
+  .repair-info .repair-info-cards {
+    grid-template-columns: 1fr;
+  }
+}
 .repair-info .repair-info-cards .repair-info-card {
   display: flex;
   flex-direction: column;
@@ -916,6 +927,20 @@ a:hover {
   grid-column: 1/3;
   border: 10px solid rgb(99, 63, 200);
 }
+@media all and (max-width: 768px) {
+  .repair-info .repair-info-cards .repair-info-card:first-child {
+    text-align: center;
+    justify-content: center;
+    grid-column: 1/1;
+  }
+  .repair-info .repair-info-cards .repair-info-card:first-child .repair-info-card-img,
+.repair-info .repair-info-cards .repair-info-card:first-child .price--old {
+    display: none;
+  }
+  .repair-info .repair-info-cards .repair-info-card:first-child .price {
+    color: #633fc8;
+  }
+}
 .repair-info .repair-info-cards .repair-info-card:first-child .price {
   background: #633fc8;
   color: #fff;
@@ -926,6 +951,12 @@ a:hover {
 }
 .repair-info .repair-info-cards .repair-info-card:not(:first-child) .price {
   color: #633fc8;
+}
+@media all and (max-width: 768px) {
+  .repair-info .repair-info-cards .repair-info-card:not(:first-child) {
+    text-align: center;
+    justify-content: center;
+  }
 }
 .repair-info .repair-info-cards .repair-info-card .repair-info-card-img {
   position: absolute;

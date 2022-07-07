@@ -39,6 +39,10 @@
       padding: 7px 10px;
       border-radius: 5px;
       border: 1px solid transparent;
+      @media all and (max-width: 768px) {
+        margin-right: 3px;
+        margin-left: 3px;
+      }
       &:hover {
         border-color: #fff;
       }
