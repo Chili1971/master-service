@@ -218,6 +218,10 @@
     .main-img {
       align-items: flex-start;
       width: 100%;
+      img {
+        // max-width: 150px;
+        max-height: 450px;
+      }
     }
     .main-prices {
       grid-column: 1 / 3;
