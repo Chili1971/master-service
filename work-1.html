@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Master Service</title>
-    <link rel="stylesheet" href="/scss/style.css" />
+    <link rel="stylesheet" href="scss/style.css" />
   </head>
   <body>
     <div class="wrapper bg-repair noselect">
       <div id="particles-js" class="particles"></div>
-      <div class="container">
+      <main
+        style="left: -1280px; opacity: 0; transition: 2.5s"
+        class="container"
+      >
         <div class="work">
           <div class="work-menu">
             <div class="top">
@@ -109,7 +112,7 @@
           </div> -->
           </main>
         </div>
-      </div>
+      </main>
     </div>
     <script src="js/particles.min.js"></script>
     <script>
@@ -123,5 +126,12 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <!-- наш код -->
     <script src="js/main.js"></script>
+    <!-- плавное появление страниц -->
+    <script>
+      $(document).ready(function () {
+        $("main").css("left", "0");
+        $("main").css("opacity", "1");
+      });
+    </script>
   </body>
 </html>
