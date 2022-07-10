@@ -2,6 +2,7 @@
   display: flex;
   flex: 1 0 50%;
   justify-content: space-between;
+  padding-top: 40px;
   @media all and (max-width: 1024px) {
     &.bg {
       padding: 100px 0 50px;
@@ -51,7 +52,7 @@
     }
     h1 {
       margin-bottom: 10px;
-      font-size: vw(54);
+      font-size: vw(68);
     }
     p {
       margin-bottom: 40px;

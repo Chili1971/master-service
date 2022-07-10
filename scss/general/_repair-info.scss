@@ -1,6 +1,6 @@
 .repair-info {
   position: relative;
-  padding-top: 30px;
+  padding-top: 40px;
 
   .repair-info-cards {
     display: grid;
@@ -20,7 +20,7 @@
       flex-direction: column;
       justify-content: space-between;
       text-decoration: none;
-      font-size: 18px;
+      font-size: vw(18);
       padding: 20px;
       position: relative;
       background-color: #fff;
@@ -78,14 +78,14 @@
         position: absolute;
         font-style: normal;
         font-weight: 400;
-        font-size: 150px;
+        font-size: vw(150);
         line-height: 100px;
         color: rgba(170, 170, 170, 0.15);
       }
       .title {
         font-style: normal;
         font-weight: 400;
-        font-size: 30px;
+        font-size: vw(40);
         line-height: 44px;
         margin-bottom: 24px;
         color: #633fc8;
@@ -98,7 +98,7 @@
         li {
           font-style: normal;
           font-weight: 300;
-          font-size: 20px;
+          font-size: vw(25);
           line-height: 144.7%;
           color: #000000;
         }
@@ -111,14 +111,14 @@
         padding: 14px 12px 15px;
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
+        font-size: vw(25);
         line-height: 1;
         cursor: pointer;
       }
       .price--old {
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
+        font-size: vw(25);
         line-height: 156.7%;
         text-decoration-line: line-through;
         color: #633fc8;
@@ -130,6 +130,9 @@
 .repair-info-form {
   height: 100%;
   padding: 10px;
+  a {
+    text-decoration: none;
+  }
 
   background-color: #633fc8;
   .repair-info-form-last {
@@ -145,15 +148,16 @@
       margin-top: 25px;
       font-style: normal;
       font-weight: 400;
-      font-size: 30px;
+      font-size: vw(40);
       line-height: 44px;
       margin-bottom: 24px;
       color: white;
+      text-decoration: none;
     }
     .text {
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: vw(30);
       line-height: 44px;
       margin-bottom: 24px;
       color: white;

@@ -840,6 +840,7 @@ a:hover {
   display: flex;
   flex: 1 0 50%;
   justify-content: space-between;
+  padding-top: 40px;
 }
 @media all and (max-width: 1024px) {
   .repair.bg {
@@ -895,7 +896,7 @@ a:hover {
 }
 .repair .repair_text h1 {
   margin-bottom: 10px;
-  font-size: 54rem;
+  font-size: 68rem;
 }
 .repair .repair_text p {
   margin-bottom: 40px;
@@ -903,7 +904,7 @@ a:hover {
 
 .repair-info {
   position: relative;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .repair-info .repair-info-cards {
   display: grid;
@@ -927,7 +928,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 18rem;
   padding: 20px;
   position: relative;
   background-color: #fff;
@@ -981,14 +982,14 @@ a:hover {
   position: absolute;
   font-style: normal;
   font-weight: 400;
-  font-size: 150px;
+  font-size: 150rem;
   line-height: 100px;
   color: rgba(170, 170, 170, 0.15);
 }
 .repair-info .repair-info-cards .repair-info-card .title {
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 40rem;
   line-height: 44px;
   margin-bottom: 24px;
   color: #633fc8;
@@ -1001,7 +1002,7 @@ a:hover {
 .repair-info .repair-info-cards .repair-info-card .list li {
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 25rem;
   line-height: 144.7%;
   color: #000000;
 }
@@ -1013,14 +1014,14 @@ a:hover {
   padding: 14px 12px 15px;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25rem;
   line-height: 1;
   cursor: pointer;
 }
 .repair-info .repair-info-cards .repair-info-card .price--old {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25rem;
   line-height: 156.7%;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
@@ -1032,6 +1033,9 @@ a:hover {
   height: 100%;
   padding: 10px;
   background-color: #633fc8;
+}
+.repair-info-form a {
+  text-decoration: none;
 }
 .repair-info-form .repair-info-form-last {
   display: flex;
@@ -1046,15 +1050,16 @@ a:hover {
   margin-top: 25px;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 40rem;
   line-height: 44px;
   margin-bottom: 24px;
   color: white;
+  text-decoration: none;
 }
 .repair-info-form .repair-info-form-last .text {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 30rem;
   line-height: 44px;
   margin-bottom: 24px;
   color: white;
