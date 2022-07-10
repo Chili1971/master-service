@@ -1,0 +1,8 @@
+// @function vw($target) {
+//   $vw-result: $target * 100 / 2311 * 1vw;
+//   @return $vw-result;
+// }
+
+@function vw($target) {
+  @return $target * 1rem;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master Service</title>
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body>
+    <div class="wrapper bg-repair noselect">
+      <div id="particles-js" class="particles"></div>
+      <main
+        style="left: -1280px; opacity: 0; transition: 2.5s"
+        class="container"
+      >
+        <div class="work">
+          <div class="work-menu">
+            <div class="top">
+              <a href="work-1.html" class="custom-btn btn-12">
+                <span>Нажми!</span>
+                <span>Не включается</span>
+              </a>
+              <a href="work-2.html" class="custom-btn btn-12">
+                <span>Нажми!</span>
+                <span>Грязная печать</span>
+              </a>
+              <a href="work-3.html" class="custom-btn btn-12">
+                <span>Нажми!</span>
+                <span>Не забирает листы</span>
+              </a>
+              <a href="work-4.html" class="custom-btn btn-12">
+                <span>Нажми!</span>
+                <span>Жует бумагу</span>
+              </a>
+              <a href="work-5.html" class="custom-btn btn-12">
+                <span>Нажми!</span>
+                <span>Скрипит или трещит</span>
+              </a>
+              <a href="work-6.html" class="custom-btn btn-12">
+                <span>Нажми!</span>
+                <span>На дисплее ошибка</span>
+              </a>
+              <a href="work-7.html" class="custom-btn btn-12 selected">
+                <span>Нажми!</span>
+                <span>Компьютер не видит принтер</span>
+              </a>
+              <a href="work-8.html" class="custom-btn btn-12">
+                <span>Нажми!</span>
+                <span>Не печатает</span>
+              </a>
+              <a href="work-9.html" class="custom-btn btn-12">
+                <span>Нажми!</span>
+                <span>Подключение и настройка</span>
+              </a>
+            </div>
+            <div class="work-menu-bottom">
+              <a href="index.html" class="custom-btn btn-7">
+                <span>Вернутся на главную</span></a
+              >
+            </div>
+          </div>
+
+          <main class="work-main">
+            <div class="top">
+              <div class="title"><h1>На дисплее ошибка</h1></div>
+              <div class="info">
+                <h2>Возможные причины:</h2>
+                <ul class="border">
+                  <li>Неисправен блок питания</li>
+                  <li>Перегорел один из элементов платы управления</li>
+                  <li>Механический дефект разъема питания или вилки</li>
+                  <li>Оборвался кабель питания</li>
+                </ul>
+              </div>
+              <div class="main-img">
+                <img src="img/repair/device7.png" alt="" />
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="main-prices">
+                <ul class="main-prices-text">
+                  <li class="li-price">
+                    <div class="text">Замена платы питания</div>
+                    <div><span>от 1900 Р</span></div>
+                  </li>
+                  <li class="li-price">
+                    <div class="text">Ремонт платы питания</div>
+                    <div><span>от 900 Р</span></div>
+                  </li>
+                  <li class="li-price">
+                    <div class="text">Сброс кода ошибки</div>
+                    <div><span>от 800 Р</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- <a href="index.html"
+              ><div class="frame">
+                <button class="custom-btn btn-12">
+                  <span>Нажми!</span>
+                  <span>Вернутся на главную</span>
+                </button>
+              </div></a
+            > -->
+
+            <!-- <div class="btn">
+            <a href="index.html"
+              ><button class="btn btn-secondary">Вернутся на главную</button>
+            </a>
+          </div> -->
+          </main>
+        </div>
+      </main>
+    </div>
+    <script src="js/particles.min.js"></script>
+    <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+      particlesJS.load("particles-js", "js/particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+    <script></script>
+    <!-- Библиотека для библиотек -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- наш код -->
+    <script src="js/main.js"></script>
+    <!-- плавное появление страниц -->
+    <script>
+      $(document).ready(function () {
+        $("main").css("left", "0");
+        $("main").css("opacity", "1");
+      });
+    </script>
+  </body>
+</html>
