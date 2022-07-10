@@ -65,7 +65,10 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 237px;
+        // width: 237px;
+        img {
+          max-width: 237px;
+        }
         // transform: translateY(-50%);
       }
 

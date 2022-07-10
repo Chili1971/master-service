@@ -895,6 +895,7 @@ a:hover {
 }
 .repair .repair_text h1 {
   margin-bottom: 10px;
+  font-size: 54rem;
 }
 .repair .repair_text p {
   margin-bottom: 40px;
@@ -971,7 +972,9 @@ a:hover {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 237px;
+}
+.repair-info .repair-info-cards .repair-info-card .repair-info-card-img img {
+  max-width: 237px;
 }
 .repair-info .repair-info-cards .repair-info-card:before {
   content: "0" counter(card);
