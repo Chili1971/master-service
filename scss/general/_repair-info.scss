@@ -85,7 +85,7 @@
       .title {
         font-style: normal;
         font-weight: 400;
-        font-size: vw(40);
+        font-size: vw(30);
         line-height: 44px;
         margin-bottom: 24px;
         color: #633fc8;
@@ -98,7 +98,7 @@
         li {
           font-style: normal;
           font-weight: 300;
-          font-size: vw(25);
+          font-size: vw(20);
           line-height: 144.7%;
           color: #000000;
         }
@@ -135,6 +135,9 @@
   }
 
   background-color: #633fc8;
+  // background-image: url(/img/phone.png);
+  // background-repeat: round space;
+  // background-position: center center;
   .repair-info-form-last {
     display: flex;
     flex-direction: column;
@@ -148,7 +151,7 @@
       margin-top: 25px;
       font-style: normal;
       font-weight: 400;
-      font-size: vw(40);
+      font-size: vw(30);
       line-height: 44px;
       margin-bottom: 24px;
       color: white;
@@ -157,7 +160,7 @@
     .text {
       font-style: normal;
       font-weight: 400;
-      font-size: vw(30);
+      font-size: vw(25);
       line-height: 44px;
       margin-bottom: 24px;
       color: white;

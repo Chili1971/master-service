@@ -8,91 +8,72 @@
     <link rel="stylesheet" href="scss/style.css" />
   </head>
   <body>
-    <div class="wrapper bg-repair noselect">
+    <div class="wrapper bg-fuel noselect">
       <div id="particles-js" class="particles"></div>
       <main
-        style="right: -1280px; opacity: 0; transition: 2.5s"
+        style="left: -1280px; opacity: 0; transition: 2.5s"
         class="container"
       >
         <div class="work">
           <div class="work-menu">
             <div class="top">
-              <a href="work-1.html" class="custom-btn btn-12">
+              <a href="fuel-1.html" class="custom-btn btn-12">
                 <span>Нажми!</span>
-                <span>Не включается</span>
+                <span>Бледная печать</span>
               </a>
-              <a href="work-2.html" class="custom-btn btn-12">
+              <a href="fuel-2.html" class="custom-btn btn-12">
                 <span>Нажми!</span>
                 <span>Грязная печать</span>
               </a>
-              <a href="work-3.html" class="custom-btn btn-12">
-                <span>Нажми!</span>
-                <span>Не забирает листы</span>
-              </a>
-              <a href="work-4.html" class="custom-btn btn-12">
-                <span>Нажми!</span>
-                <span>Жует бумагу</span>
-              </a>
-              <a href="work-5.html" class="custom-btn btn-12">
-                <span>Нажми!</span>
-                <span>Скрипит или трещит</span>
-              </a>
-              <a href="work-6.html" class="custom-btn btn-12 selected">
-                <span>Нажми!</span>
-                <span>На дисплее ошибка</span>
-              </a>
-              <a href="work-7.html" class="custom-btn btn-12">
-                <span>Нажми!</span>
-                <span>Компьютер не видит принтер</span>
-              </a>
-              <a href="work-8.html" class="custom-btn btn-12">
+              <a href="fuel-3.html" class="custom-btn btn-12 selected">
                 <span>Нажми!</span>
                 <span>Не печатает</span>
               </a>
-              <a href="work-9.html" class="custom-btn btn-12">
+              <a href="fuel-4.html" class="custom-btn btn-12">
                 <span>Нажми!</span>
-                <span>Подключение и настройка</span>
+                <span>Пятна на листе</span>
+              </a>
+              <a href="fuel-5.html" class="custom-btn btn-12">
+                <span>Нажми!</span>
+                <span>Просыпается тонер</span>
+              </a>
+              <a href="fuel-6.html" class="custom-btn btn-12">
+                <span>Нажми!</span>
+                <span>Скрипит или трещит</span>
               </a>
             </div>
             <div class="work-menu-bottom">
-              <a href="index.html" class="custom-btn btn-7">
+              <a href="cartrige.html" class="custom-btn btn-7">
                 <span>Вернутся на главную</span></a
               >
             </div>
           </div>
-          <!-- <div class="work-blank"></div> -->
+
           <main class="work-main">
             <div class="top">
-              <div class="title"><h1>На дисплее ошибка</h1></div>
+              <div class="title"><h1>Не печатает</h1></div>
               <div class="info">
                 <h2>Возможные причины:</h2>
                 <ul class="border">
-                  <li>Неисправен картридж</li>
-                  <li>Износ термопленки или вала</li>
-                  <li>Повреждение прижимного резинового вала</li>
-                  <li>Повреждение шлейфа сканера</li>
+                  <li>Закончился тонер</li>
+                  <li>Механический деффект картриджа</li>
+                  <li>Неиспрвен принтер или МФУ</li>
                 </ul>
               </div>
               <div class="main-img">
-                <img src="img/repair/device6.png" alt="" />
+                <img src="img/repair/cartrige3.png" alt="" />
               </div>
             </div>
             <div class="bottom">
               <div class="main-prices">
                 <ul class="main-prices-text">
                   <li class="li-price">
-                    <div class="text">
-                      Поднять компьютеру веки и показать принтер
-                    </div>
-                    <div><span>от 1900 Р</span></div>
-                  </li>
-                  <li class="li-price">
-                    <div class="text">Замена тефлонового вала</div>
-                    <div><span>от 900 Р</span></div>
+                    <div class="text">Заправка картриджа</div>
+                    <div><span>от 300 Р</span></div>
                   </li>
                   <li class="li-price">
                     <div class="text">Ремонт картриджа</div>
-                    <div><span>от 800 Р</span></div>
+                    <div><span>от 200 Р</span></div>
                   </li>
                 </ul>
               </div>
@@ -131,7 +112,7 @@
     <!-- плавное появление страниц -->
     <script>
       $(document).ready(function () {
-        $("main").css("right", "0");
+        $("main").css("left", "0");
         $("main").css("opacity", "1");
       });
     </script>

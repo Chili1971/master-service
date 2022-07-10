@@ -30,6 +30,10 @@
   // );
   // animation: AnimateBG 20s ease infinite;
 }
+.bg-fuel {
+  background: -webkit-linear-gradient(90deg, #ab9ca1, #c0d3e9);
+  background: linear-gradient(90deg, #ab9ca1, #c0d3e9);
+}
 @keyframes AnimateBG {
   0% {
     background-position: 0% 50%;
